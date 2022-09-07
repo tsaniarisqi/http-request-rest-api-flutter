@@ -22,7 +22,7 @@ class _MovieListState extends State<MovieList> {
   Widget build(BuildContext context) {
     service.getPopularMovies().then((value) => {
           setState(() {
-            result = value!;
+            result = value! as String;
           })
         });
     return Scaffold(
